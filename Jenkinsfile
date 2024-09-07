@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-               git "https://${GIT_TOKEN}@github.com/vishal-bulbule/android.git"
+               git "https://${GIT_TOKEN}@github.com/joelfra/android.git"
             }
         }
 
@@ -26,12 +26,6 @@ pipeline {
                 script {
                     sh 'terraform plan -out=tfplan'
                 }
-            }
-        }
-
-     stage('Manual Approval') {
-            steps {
-                input "Approve?"
             }
         }
 
