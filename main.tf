@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "my-bucket" {
-  name                     = "tt-githubdemo-bucket-001"
+  name                     = "android-bucket-001"
   project                  = "producteur"
   location                 = "europe-west9"
   force_destroy            = true
